@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container {
+            width: 800px;
+            height: 820px;
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container2 {
+            position: absolute;
+            width: 800px;
+            height: 820px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container3 {
+            position: absolute;
+            width: 940px;
+            height: 860px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+        .rol {
+            width: 646px;
+            display: flex;
+        }
+
+        .rol:last-child {
+            border-bottom: 1px solid #000;
+        }
+
+        #river {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 644px;
+            height: 80px;
+            border: 1px solid #000;
+            border-bottom: none;
+            font-family: "標楷體";
+            font-size: 52px;
+        }
+        
+
+        .pattern {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #000;
+            border-bottom: none;
+        }
+
+        .rol:nth-child(1) .pattern:nth-child(4) {
+            background: linear-gradient(45deg,#fff 49.5%,#000 50%,#fff 50.5%);
+        }
+
+        .rol:nth-child(1) .pattern:nth-child(5) {
+            background: linear-gradient(135deg,#fff 49.5%,#000 50%,#fff 50.5%);
+        }
+
+        .rol:nth-child(2) .pattern:nth-child(4) {
+            background: linear-gradient(135deg,#fff 49.5%,#000 50%,#fff 50.5%);
+        }
+
+        .rol:nth-child(2) .pattern:nth-child(5) {
+            background: linear-gradient(45deg,#fff 49.5%,#000 50%,#fff 50.5%);
+        }
+
+        .rol:nth-child(8) .pattern:nth-child(4) {
+            background: linear-gradient(45deg,#fff 49.5%,#000 50%,#fff 50.5%);
+        }
+
+        .rol:nth-child(8) .pattern:nth-child(5) {
+            background: linear-gradient(135deg,#fff 49.5%,#000 50%,#fff 50.5%);
+        }
+
+        .rol:nth-child(9) .pattern:nth-child(4) {
+            background: linear-gradient(135deg,#fff 49.5%,#000 50%,#fff 50.5%);
+        }
+
+        .rol:nth-child(9) .pattern:nth-child(5) {
+            background: linear-gradient(45deg,#fff 49.5%,#000 50%,#fff 50.5%);
+        }
+
+        .pattern~.pattern {
+            border-left: none;
+        }
+
+        .chess-row {
+            width: 698px;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chess-row:nth-child(3),
+        .chess-row:nth-child(8) {
+            width: 538px;
+        }
+
+
+        .chess {
+            width: 54px;
+            height: 54px;
+            background: #fff;
+            font-size: 36px;
+            font-family: "標楷體";
+            border: 1px solid #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .red {
+            border: 1px solid rgb(228, 0, 0);
+            color: rgb(228,0,0);
+        }
+
+        .phrase {
+            display: flex;
+            flex-direction: column;
+            width: 32px;
+            height: 820px;
+            font-size: 36px;
+            font-family: '標楷體';
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="rol">
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+        </div>
+        <div class="rol">
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+        </div>
+        <div class="rol">
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+        </div>
+        <div class="rol">
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+        </div>
+        <div id="river">
+            <div>楚河</div>
+            <div>漢界</div>
+        </div>
+        <div class="rol">
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+        </div>
+        <div class="rol">
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+        </div>
+        <div class="rol">
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+        </div>
+        <div class="rol">
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+            <div class="pattern"></div>
+        </div>
+    </div>
+    <div id="container2">
+        <div class="chess-row">
+            <div class="chess">車</div>
+            <div class="chess">馬</div>
+            <div class="chess">象</div>
+            <div class="chess">士</div>
+            <div class="chess">將</div>
+            <div class="chess">士</div>
+            <div class="chess">象</div>
+            <div class="chess">馬</div>
+            <div class="chess">車</div>
+        </div>
+        <div class="chess-row"></div>
+        <div class="chess-row">
+            <div class="chess">包</div>
+            <div class="chess">包</div>
+        </div>
+        <div class="chess-row">
+            <div class="chess">卒</div>
+            <div class="chess">卒</div>
+            <div class="chess">卒</div>
+            <div class="chess">卒</div>
+            <div class="chess">卒</div>
+        </div>
+        <div class="chess-row"></div>
+        <div class="chess-row">
+        </div>
+        <div class="chess-row">
+            <div class="chess red">兵</div>
+            <div class="chess red">兵</div>
+            <div class="chess red">兵</div>
+            <div class="chess red">兵</div>
+            <div class="chess red">兵</div>
+        </div>
+        <div class="chess-row">
+            <div class="chess red">炮</div>
+            <div class="chess red">炮</div>
+        </div>
+        <div class="chess-row"></div>
+        <div class="chess-row">
+            <div class="chess red">俥</div>
+            <div class="chess red">傌</div>
+            <div class="chess red">相</div>
+            <div class="chess red">仕</div>
+            <div class="chess red">帥</div>
+            <div class="chess red">仕</div>
+            <div class="chess red">相</div>
+            <div class="chess red">傌</div>
+            <div class="chess red">俥</div>
+        </div>
+    </div>
+    <div id="container3">
+        <div class="phrase">棋盤裡<br>，車無輪<br>，馬無韁<br>，叫聲將軍提防提防</div>
+        <div class="phrase">圖畫裡<br>，龍不吟<br>，虎不嘯<br>，小小書僮可笑可笑</div>
+    </div>
+</body>
+
+</html>
